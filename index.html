@@ -4,6 +4,22 @@
   <meta property="og:title" content="무브먼트-생활체육플랫폼">
   <meta property="og:description" content="The First Movement">
   <meta property="og:image" content="https://movement83.github.io//movementlogo.png">
+
+  <script type="text/javascript">
+    window.onload = function() {
+      var visitTime = (new Date()).getTime();
+
+      var isAndroid = /android/i.test(navigator.userAgent);
+      var isIos = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+      if(isAndroid){
+        location.href = "https://play.google.com/store/apps/details?id=com.movement.movement";
+      }
+      else if(isIos){
+        location.href = "https://apps.apple.com/app/id0000000000";
+      }
+    }
+  </script>
+  
 </head>
 <body>
   <h1>AppLink / Universal Link</h1>
